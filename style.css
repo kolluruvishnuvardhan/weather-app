@@ -1,20 +1,20 @@
 body {
-    background: #f8f0e3; /* Creamy off-white background - warm and inviting */
+    background: #f8f0e3; 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Arial', sans-serif; /* Modern, clean font */
+    font-family: 'Arial', sans-serif; 
 }
 
 .search {
     display: flex;
     align-items: center;
-    background: #fff; /* White search bar */
-    padding: 10px; /* Increased padding */
-    border-radius: 30px; /* More rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background: #fff; 
+    padding: 10px; 
+    border-radius: 30px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .search input {
@@ -22,39 +22,39 @@ body {
     outline: none;
     flex: 1;
     padding: 10px;
-    font-size: 16px; /* Slightly smaller font */
+    font-size: 16px; 
     border-radius: 30px;
-    background: #f5f5f5; /* Light gray input background */
-    color: #333; /* Dark gray input text */
+    background: #f5f5f5;
+    color: #333; 
 }
 
 .search button {
     border: none;
-    background: whitesmoke; /* Green search button - friendly and approachable */
+    background: whitesmoke;
     color: #fff;
-    padding: 10px 15px; /* Adjusted padding */
+    padding: 10px 15px; 
     border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    transition: background-color 0.3s ease; 
 }
 
 .search button:hover {
-    background-color: whitesmoke; /* Darker green on hover */
+    background-color: whitesmoke; 
 }
 
 .search button img {
-    width: 20px; /* Slightly smaller icon */
+    width: 20px; 
     height: 20px;
-    filter: brightness(1) invert(0); /* Ensure icon is visible (no inversion) */
-    margin-right: 5px; /* Space between icon and text */
+    filter: brightness(1) invert(0); 
+    margin-right: 5px; 
 }
 
 .card {
     text-align: center;
-    background: #fff; /* White card */
-    border-radius: 15px; /* More rounded corners */
+    background: #fff; 
+    border-radius: 15px; 
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer, more diffused shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .weather {
@@ -62,42 +62,40 @@ body {
 }
 
 .weather-icon {
-    width: 120px; /* Slightly larger icon */
+    width: 120px;
     height: 120px;
-    /* No filter - use original icon colors */
 }
 
 .temp {
-    font-size: 52px; /* Larger temperature */
-    font-weight: 600; /* Slightly less bold */
-    color: #333; /* Dark gray temp */
-    margin-bottom: 5px; /* Small margin below temperature */
+    font-size: 52px;
+    font-weight: 600; 
+    color: #333; 
+    margin-bottom: 5px; 
 }
 
 .city {
-    font-size: 28px; /* Slightly larger city name */
-    color: #555; /* Darker gray for city */
-    margin: 0; /* Reset default margin */
+    font-size: 28px; 
+    color: #555; 
+    margin: 0; 
 }
 
 .details {
     display: flex;
     justify-content: space-around;
-    margin-top: 25px; /* Increased margin */
+    margin-top: 25px; 
 }
 
 .col {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #777; /* Medium gray for details text */
+    color: #777; 
 }
 
 .col img {
-    width: 50px; /* Larger icons */
+    width: 50px; 
     height: 50px;
-    /* No filter - use original icon colors */
-    margin-bottom: 10px; /* Space below icons */
+    margin-bottom: 10px; 
 }
 
 .humidity, .wind {
@@ -106,6 +104,6 @@ body {
 }
 
 .col p {
-    font-size: 16px; /* Slightly larger detail descriptions */
-    color: #999; /* Lighter gray for descriptions */
+    font-size: 16px; 
+    color: #999; 
 }
