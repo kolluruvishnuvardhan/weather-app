@@ -1,6 +1,21 @@
-const apiKey = "78861d8435e5eb3ff9f765fb431fdb8d"; // Replace with your OpenWeatherMap API key
+
+
+const apiKey = "78861d8435e5eb3ff9f765fb431fdb8d"; 
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
+function initializeWeatherUI() {
+    updateWeatherUI("City", "--°C", "--%", "-- KMPH", "rains.png", "Weather Icon");
+}
+function updateWeatherUI(cityName, temperature, humidity, windSpeed, iconSrc, iconAlt) {
+    document.getElementById("cityName").innerHTML = cityName;
+    document.getElementById("temperature").innerHTML = temperature;
+    document.getElementById("humidity").innerHTML = humidity;
+    document.getElementById("windSpeed").innerHTML = windSpeed;
+
+    const weatherIcon = document.getElementById("weatherIcon");
+    weatherIcon.src = iconSrc;
+    weatherIcon.alt = iconAlt;
+}
 async function checkWeather() {
     const city = document.getElementById("cityInput").value || "Mumbai";
     try {
@@ -31,16 +46,6 @@ async function checkWeather() {
     }
 }
 
-function updateWeatherUI(cityName, temperature, humidity, windSpeed, iconSrc, iconAlt) {
-    document.getElementById("cityName").innerHTML = cityName;
-    document.getElementById("temperature").innerHTML = temperature;
-    document.getElementById("humidity").innerHTML = humidity;
-    document.getElementById("windSpeed").innerHTML = windSpeed;
-
-    const weatherIcon = document.getElementById("weatherIcon");
-    weatherIcon.src = iconSrc;
-    weatherIcon.alt = iconAlt;
-}
-
-// Optional: Call checkWeather() on page load to display default city weather
-checkWeather();
+window.onload = function () {
+    initializeWeatherUI();
+};
